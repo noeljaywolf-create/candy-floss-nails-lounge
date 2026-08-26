@@ -35,9 +35,14 @@ tailwind.config = {
 </style>
 </head>
 <body class="bg-blush text-ink2 antialiased">
+<!-- CONCEPT NOTICE - Priority 8 -->
+<div class="bg-amber-50 border-b border-amber-200 text-amber-900 text-[11px] md:text-xs py-2.5 px-4 text-center leading-relaxed">
+  <span class="font-bold">Concept website</span> — prepared as a demonstration for Candy Floss Nails Lounge. Business information, pricing, imagery and customer data are placeholders pending approval. <span class="hidden md:inline opacity-60">• Demo • Sample • To be provided by client</span>
+</div>
+
 <!-- NAV -->
-<nav class="sticky top-0 z-50 bg-white/80 glass border-b border-pink-100">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-[72px] flex items-center justify-between">
+<nav class="sticky top-0 z-50 bg-white/85 glass border-b border-pink-100">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-[68px] flex items-center justify-between">
     <div class="flex items-center gap-3">
       <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary to-cta flex items-center justify-center text-white font-display font-bold text-lg">C</div>
       <div>
@@ -45,12 +50,10 @@ tailwind.config = {
         <div class="text-[11px] tracking-[0.2em] uppercase font-semibold text-primary">Nails & Beauty Lounge</div>
       </div>
     </div>
-    <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+    <div class="hidden lg:flex items-center gap-7 text-sm font-medium">
+      <a href="#how-it-works" class="hover:text-primary transition-colors">How it works</a>
       <a href="#services" class="hover:text-primary transition-colors">Services</a>
-      <a href="#about" class="hover:text-primary transition-colors">Our Story</a>
-      <a href="#pricing" class="hover:text-primary transition-colors">Menu</a>
       <a href="#shop" class="hover:text-primary transition-colors">Boutique</a>
-      <a href="#gallery" class="hover:text-primary transition-colors">Gallery</a>
       <a href="#visit" class="hover:text-primary transition-colors">Visit</a>
     </div>
     <div class="flex items-center gap-3">
@@ -58,424 +61,459 @@ tailwind.config = {
         <i data-lucide="shopping-bag" class="w-4 h-4"></i>
         <span id="cart-count" class="absolute -top-1 -right-1 w-5 h-5 bg-primary text-white text-[11px] font-bold rounded-full flex items-center justify-center">0</span>
       </button>
-      <a href="#booking" class="hidden md:inline-flex bg-ink text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-ink2 transition-colors cursor-pointer">Book Appointment</a>
-      <button class="lg:hidden w-10 h-10 rounded-full bg-ink text-white flex items-center justify-center"><i data-lucide="menu" class="w-5 h-5"></i></button>
+      <a href="#booking" class="hidden md:inline-flex bg-ink text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-ink2 transition-colors cursor-pointer shadow-md">Book Appointment</a>
+      <a href="https://wa.me/263771273169?text=Hi%20Noel%20Digital%20Agency%2C%20I%20want%20to%20discuss%20the%20Candy%20Floss%20concept" target="_blank" class="hidden md:inline-flex bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors cursor-pointer"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO - Priority 2: Business outcome -->
 <section class="relative overflow-hidden bg-gradient-to-b from-white to-blush">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8 lg:py-12">
-    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-10 lg:py-14">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
       <div class="space-y-6">
         <div class="inline-flex items-center gap-2 bg-white border border-pink-200 rounded-full px-4 py-2 text-xs font-semibold tracking-wide">
           <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-          NOW OPEN • BJP Southgate Mall, Braeside, Harare
+          BJP Southgate Mall, Braeside, Harare
           <span class="hidden sm:inline text-primary">• Affordable Luxury For All</span>
         </div>
-        <h1 class="font-display text-4xl md:text-5xl lg:text-[56px] leading-[0.95] font-bold text-ink">
-          Affordable<br>
-          <span class="text-primary italic font-medium">Luxury,</span><br>
-          Without<br>Compromise.
+        <h1 class="font-display text-[38px] md:text-5xl lg:text-[52px] leading-[0.98] font-bold text-ink">
+          Turn visitors<br>
+          <span class="text-primary italic font-medium">into bookings</span><br>
+          — and bookings<br>into regulars.
         </h1>
         <p class="text-[15px] leading-relaxed text-ink/70 max-w-xl">
-          Candy Floss is not a salon. It's a <span class="font-semibold text-ink">lounge</span> — where women of the same mindset gather to be pampered, to share ideas, and to leave feeling classy. Beautiful interior, nice couches, professional staff. Every visit is an experience.
+          A direct digital channel for Candy Floss: customers discover services, explore pricing, book instantly and pay — without endless WhatsApp back-and-forth. Beautiful lounge experience, now with a smooth online journey.
         </p>
+        <!-- Priority 5 & 2: Clear CTAs -->
         <div class="flex flex-wrap gap-3">
-          <a href="#booking" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3.5 rounded-full font-semibold text-sm hover:bg-pink-600 transition-colors cursor-pointer shadow-lg shadow-pink-200">
-            Book Your Glow <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <a href="#booking" class="inline-flex items-center gap-2 bg-primary text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-pink-600 transition-colors cursor-pointer shadow-lg shadow-pink-200">
+            Book Appointment <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="#shop" class="inline-flex items-center gap-2 bg-white border border-pink-200 px-8 py-3.5 rounded-full font-semibold text-sm hover:bg-pink-50 transition-colors cursor-pointer">
-            <i data-lucide="store" class="w-4 h-4"></i> Shop Press-Ons
+          <a href="https://wa.me/263771273169?text=Hi%20Candy%20Floss%2C%20I%20want%20to%20book" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-emerald-700 transition-colors cursor-pointer">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
+          </a>
+          <a href="#services" class="inline-flex items-center gap-2 bg-white border border-pink-200 px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-pink-50 transition-colors cursor-pointer">
+            View Services & Prices
           </a>
         </div>
-        <div class="flex items-center gap-6 pt-2">
-          <div class="flex -space-x-2">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" class="w-9 h-9 rounded-full border-2 border-white object-cover" alt="">
-            <div class="w-9 h-9 rounded-full bg-ink text-white border-2 border-white flex items-center justify-center text-[10px] font-bold">500+</div>
+        <!-- Priority 2: Discover -> Explore -> Book -> Pay -> Return -->
+        <div class="grid grid-cols-5 gap-2 pt-2">
+          <div class="text-center bg-white border border-pink-100 rounded-2xl p-3">
+            <div class="w-8 h-8 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center"><i data-lucide="search" class="w-4 h-4"></i></div>
+            <div class="text-[11px] font-bold mt-1">Discover</div>
+            <div class="text-[10px] text-ink/50">Google / Social</div>
           </div>
-          <div class="text-sm">
-            <div class="flex text-amber-400 gap-0.5"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><span class="text-ink font-bold ml-1">4.9/5</span></div>
-            <div class="text-xs text-ink/60">Loved by Braeside women</div>
+          <div class="text-center bg-white border border-pink-100 rounded-2xl p-3">
+            <div class="w-8 h-8 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center"><i data-lucide="eye" class="w-4 h-4"></i></div>
+            <div class="text-[11px] font-bold mt-1">Explore</div>
+            <div class="text-[10px] text-ink/50">Services & prices</div>
+          </div>
+          <div class="text-center bg-white border border-pink-100 rounded-2xl p-3 ring-2 ring-primary/20">
+            <div class="w-8 h-8 mx-auto rounded-full bg-primary text-white flex items-center justify-center"><i data-lucide="calendar-check" class="w-4 h-4"></i></div>
+            <div class="text-[11px] font-bold mt-1">Book</div>
+            <div class="text-[10px] text-ink/50">Date & time</div>
+          </div>
+          <div class="text-center bg-white border border-pink-100 rounded-2xl p-3">
+            <div class="w-8 h-8 mx-auto rounded-full bg-primary/10 text-primary flex items-center justify-center"><i data-lucide="credit-card" class="w-4 h-4"></i></div>
+            <div class="text-[11px] font-bold mt-1">Pay</div>
+            <div class="text-[10px] text-ink/50">EcoCash / Card</div>
+          </div>
+          <div class="text-center bg-white border border-pink-100 rounded-2xl p-3">
+            <div class="w-8 h-8 mx-auto rounded-full bg-ink text-white flex items-center justify-center"><i data-lucide="repeat" class="w-4 h-4"></i></div>
+            <div class="text-[11px] font-bold mt-1">Return</div>
+            <div class="text-[10px] text-ink/50">Reminders</div>
           </div>
         </div>
+        <div class="text-[11px] text-ink/50 flex items-center gap-2"><i data-lucide="info" class="w-3.5 h-3.5"></i> Demo: all pricing & imagery are samples — to be replaced with client-provided content.</div>
       </div>
-      <!-- Hero Images -->
+      <!-- Hero Images - keep attractiveness, remove fake proof -->
       <div class="relative">
         <div class="grid grid-cols-2 gap-3 md:gap-4">
           <div class="space-y-3 md:space-y-4">
             <div class="rounded-[28px] overflow-hidden aspect-[4/5] shadow-xl border border-white">
-              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=800&fit=crop" class="w-full h-full object-cover" alt="Nails lounge interior">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=800&fit=crop" class="w-full h-full object-cover" alt="Lounge interior - sample imagery">
             </div>
-            <div class="rounded-[24px] bg-white p-4 shadow-lg border border-pink-100 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="check" class="w-5 h-5"></i></div>
-              <div>
-                <div class="text-sm font-bold leading-none">Family Business</div>
-                <div class="text-xs text-ink/60">Florence & Lisa Musingwini</div>
+            <div class="rounded-[24px] bg-white p-4 shadow-lg border border-pink-100">
+              <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600"><i data-lucide="sofa" class="w-4 h-4"></i></div>
+                <div>
+                  <div class="text-xs font-bold">Breathtaking lounge interior</div>
+                  <div class="text-[11px] text-ink/60">Nice couches • Professional staff</div>
+                </div>
               </div>
             </div>
           </div>
           <div class="space-y-3 md:space-y-4 pt-6">
             <div class="rounded-2xl bg-gradient-to-br from-primary to-cta p-5 text-white shadow-xl">
-              <div class="text-3xl font-display font-bold">“</div>
+              <div class="text-2xl font-display font-bold">“</div>
               <p class="text-sm leading-relaxed font-medium -mt-1">We made this into a lounge so women can share ideas — not gossip.</p>
-              <div class="text-xs opacity-80 mt-3">— Florence Musingwini, CEO</div>
+              <div class="text-xs opacity-80 mt-3">— Florence Musingwini, CEO • The Standard 2023</div>
             </div>
             <div class="rounded-[28px] overflow-hidden aspect-[4/5] shadow-xl border border-white">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop" class="w-full h-full object-cover" alt="Manicure detail">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop" class="w-full h-full object-cover" alt="Manicure - sample imagery">
             </div>
           </div>
         </div>
-        <!-- floating badge -->
-        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-xl border border-pink-100 px-6 py-3 flex items-center gap-4">
-          <div class="flex items-center gap-2 text-sm font-bold"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center"><i data-lucide="sparkles" class="w-4 h-4"></i></span> Nails • Lashes • Wax • Massage • Makeup</div>
+        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-xl border border-pink-100 px-5 py-2.5 flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i></span>
+          <span class="text-xs font-bold">Nails • Lashes • Wax • Massage • Makeup</span>
+          <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-1 rounded-full font-bold">SAMPLE</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
-<div class="bg-white border-y border-pink-100 py-4">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-wrap justify-center md:justify-between gap-4 text-xs font-semibold tracking-wide uppercase text-ink/60">
+<!-- TRUST BAR - factual only -->
+<div class="bg-white border-y border-pink-100 py-3.5">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-wrap justify-center md:justify-between gap-4 text-xs font-semibold tracking-wide uppercase text-ink/55">
     <span class="flex items-center gap-2"><i data-lucide="gem" class="w-4 h-4 text-primary"></i> Affordable Luxury</span>
-    <span class="flex items-center gap-2"><i data-lucide="sofa" class="w-4 h-4 text-primary"></i> Breathtaking Lounge Interior</span>
-    <span class="flex items-center gap-2"><i data-lucide="heart-handshake" class="w-4 h-4 text-primary"></i> Family Owned & Operated</span>
+    <span class="flex items-center gap-2"><i data-lucide="sofa" class="w-4 h-4 text-primary"></i> Lounge, Not Just a Salon</span>
+    <span class="flex items-center gap-2"><i data-lucide="heart-handshake" class="w-4 h-4 text-primary"></i> Family Business</span>
     <span class="flex items-center gap-2"><i data-lucide="badge-check" class="w-4 h-4 text-primary"></i> Professional Staff</span>
     <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-primary"></i> BJP Southgate Mall, Braeside</span>
   </div>
 </div>
 
-<!-- SERVICES -->
-<section id="services" class="py-14 lg:py-20 bg-white">
+<!-- HOW IT WORKS - Priority 5 & 6 -->
+<section id="how-it-works" class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="text-center max-w-2xl mx-auto mb-10">
-      <div class="inline-block bg-blush border border-pink-200 rounded-full px-4 py-1.5 text-[11px] font-bold tracking-widest uppercase text-primary">Our Menu</div>
+    <div class="text-center max-w-2xl mx-auto">
+      <div class="inline-block bg-blush border border-pink-200 rounded-full px-3 py-1 text-[11px] font-bold tracking-widest uppercase text-primary">How it works</div>
+      <h2 class="font-display text-2xl md:text-3xl font-bold mt-3">5 taps to a confirmed booking</h2>
+      <p class="text-sm text-ink/60 mt-2">No long conversations. Customers self-serve, you stay organized.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-8">
+      <div class="bg-blush rounded-2xl p-5 border border-pink-100 text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-white border border-pink-100 flex items-center justify-center font-bold text-primary text-sm">1</div>
+        <div class="font-bold text-sm mt-3">Choose service</div>
+        <div class="text-xs text-ink/60 mt-1">Nails, pedi, makeup, massage</div>
+      </div>
+      <div class="bg-blush rounded-2xl p-5 border border-pink-100 text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-white border border-pink-100 flex items-center justify-center font-bold text-primary text-sm">2</div>
+        <div class="font-bold text-sm mt-3">Pick date & time</div>
+        <div class="text-xs text-ink/60 mt-1">Live availability</div>
+      </div>
+      <div class="bg-blush rounded-2xl p-5 border border-pink-100 text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-white border border-pink-100 flex items-center justify-center font-bold text-primary text-sm">3</div>
+        <div class="font-bold text-sm mt-3">Enter details</div>
+        <div class="text-xs text-ink/60 mt-1">Name + WhatsApp</div>
+      </div>
+      <div class="bg-blush rounded-2xl p-5 border border-pink-100 text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-white border border-pink-100 flex items-center justify-center font-bold text-primary text-sm">4</div>
+        <div class="font-bold text-sm mt-3">Confirm</div>
+        <div class="text-xs text-ink/60 mt-1">Instant confirmation screen</div>
+      </div>
+      <div class="bg-ink text-white rounded-2xl p-5 text-center">
+        <div class="w-10 h-10 mx-auto rounded-full bg-white/20 flex items-center justify-center font-bold text-sm">5</div>
+        <div class="font-bold text-sm mt-3">WhatsApp + Pay</div>
+        <div class="text-xs text-white/70 mt-1">Auto message & EcoCash link</div>
+      </div>
+    </div>
+    <div class="mt-6 flex flex-wrap justify-center gap-2 text-[11px]">
+      <span class="bg-white border border-pink-100 rounded-full px-3 py-1.5 flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i> Validates dates</span>
+      <span class="bg-white border border-pink-100 rounded-full px-3 py-1.5 flex items-center gap-1.5"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-primary"></i> Works on mobile & desktop</span>
+      <span class="bg-white border border-pink-100 rounded-full px-3 py-1.5 flex items-center gap-1.5"><i data-lucide="undo-2" class="w-3.5 h-3.5 text-primary"></i> Back button safe</span>
+      <span class="bg-white border border-pink-100 rounded-full px-3 py-1.5 flex items-center gap-1.5"><i data-lucide="alert-circle" class="w-3.5 h-3.5 text-amber-600"></i> Clear errors & loading</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES - labeled as sample -->
+<section id="services" class="py-14 bg-blush">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <div class="inline-flex items-center gap-2 bg-white border border-pink-200 rounded-full px-3 py-1.5 text-[11px] font-bold tracking-widest uppercase text-primary"><i data-lucide="info" class="w-3 h-3"></i> Demo menu — Sample pricing to be confirmed by client</div>
       <h2 class="font-display text-3xl md:text-4xl font-bold mt-4">Tailor-made for you</h2>
-      <p class="text-sm text-ink/60 mt-3">Nails, beauty, manicures, pedicures, massages, make-up — and among other tailor-made client needs. Tap any service to book instantly.</p>
+      <p class="text-sm text-ink/60 mt-2">Tap any card to jump to booking — prices are samples, staff can update them without a developer.</p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <!-- card -->
-      <div class="group bg-blush rounded-[28px] p-6 border border-pink-100 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-        <div class="w-12 h-12 rounded-2xl bg-white border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="sparkles" class="w-6 h-6"></i></div>
+      <a href="#booking" class="group bg-white rounded-[28px] p-6 border border-pink-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+        <div class="w-12 h-12 rounded-2xl bg-blush border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="sparkles" class="w-6 h-6"></i></div>
         <h3 class="font-display font-bold text-lg mt-4">Nail Lounge</h3>
         <p class="text-sm text-ink/60 mt-1">Acrylic, Gel, Stick-ons, Rubber Base, Ombre, Nail Art, Refills.</p>
-        <ul class="text-xs mt-4 space-y-1.5 text-ink/80">
+        <div class="mt-3 text-xs text-ink/50">Sample</div>
+        <ul class="text-xs mt-1 space-y-1.5 text-ink/80">
           <li class="flex justify-between"><span>Gel Overlay</span><span class="font-bold">$15</span></li>
           <li class="flex justify-between"><span>Stick-ons + Gel</span><span class="font-bold">$12</span></li>
           <li class="flex justify-between"><span>Nail Art Design</span><span class="font-bold">$5+</span></li>
         </ul>
         <div class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary">Book now <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
-      </div>
-      <div class="group bg-blush rounded-[28px] p-6 border border-pink-100 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-        <div class="w-12 h-12 rounded-2xl bg-white border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="hand" class="w-6 h-6"></i></div>
+      </a>
+      <a href="#booking" class="group bg-white rounded-[28px] p-6 border border-pink-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+        <div class="w-12 h-12 rounded-2xl bg-blush border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="hand" class="w-6 h-6"></i></div>
         <h3 class="font-display font-bold text-lg mt-4">Mani & Pedi</h3>
         <p class="text-sm text-ink/60 mt-1">Luxury hand & foot rituals with scrub, massage & polish.</p>
-        <ul class="text-xs mt-4 space-y-1.5 text-ink/80">
+        <div class="mt-3 text-xs text-ink/50">Sample</div>
+        <ul class="text-xs mt-1 space-y-1.5 text-ink/80">
           <li class="flex justify-between"><span>Luxe Manicure</span><span class="font-bold">$15</span></li>
           <li class="flex justify-between"><span>Luxe Pedicure</span><span class="font-bold">$20</span></li>
-          <li class="flex justify-between"><span>Gel Polish Add-on</span><span class="font-bold">$5</span></li>
+          <li class="flex justify-between"><span>Gel Polish</span><span class="font-bold">$5</span></li>
         </ul>
         <div class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary">Book now <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
-      </div>
-      <div class="group bg-blush rounded-[28px] p-6 border border-pink-100 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-        <div class="w-12 h-12 rounded-2xl bg-white border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="waves" class="w-6 h-6"></i></div>
+      </a>
+      <a href="#booking" class="group bg-white rounded-[28px] p-6 border border-pink-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+        <div class="w-12 h-12 rounded-2xl bg-blush border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="waves" class="w-6 h-6"></i></div>
         <h3 class="font-display font-bold text-lg mt-4">Massage</h3>
-        <p class="text-sm text-ink/60 mt-1">Unwind in our quiet lounge. Swedish & deep relaxation.</p>
-        <ul class="text-xs mt-4 space-y-1.5 text-ink/80">
+        <p class="text-sm text-ink/60 mt-1">Swedish & deep relaxation in the lounge.</p>
+        <div class="mt-3 text-xs text-ink/50">Sample</div>
+        <ul class="text-xs mt-1 space-y-1.5 text-ink/80">
           <li class="flex justify-between"><span>Back & Shoulder (30m)</span><span class="font-bold">$20</span></li>
           <li class="flex justify-between"><span>Full Body (60m)</span><span class="font-bold">$35</span></li>
         </ul>
         <div class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary">Book now <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
-      </div>
-      <div class="group bg-blush rounded-[28px] p-6 border border-pink-100 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-        <div class="w-12 h-12 rounded-2xl bg-white border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="palette" class="w-6 h-6"></i></div>
+      </a>
+      <a href="#booking" class="group bg-white rounded-[28px] p-6 border border-pink-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+        <div class="w-12 h-12 rounded-2xl bg-blush border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="palette" class="w-6 h-6"></i></div>
         <h3 class="font-display font-bold text-lg mt-4">Make-up</h3>
-        <p class="text-sm text-ink/60 mt-1">Soft glam, bridal, editorial — polished for every occasion.</p>
-        <ul class="text-xs mt-4 space-y-1.5 text-ink/80">
+        <p class="text-sm text-ink/60 mt-1">Soft glam, bridal, editorial.</p>
+        <div class="mt-3 text-xs text-ink/50">Sample</div>
+        <ul class="text-xs mt-1 space-y-1.5 text-ink/80">
           <li class="flex justify-between"><span>Day Glam</span><span class="font-bold">$25</span></li>
           <li class="flex justify-between"><span>Bridal (incl. trial)</span><span class="font-bold">$80</span></li>
         </ul>
         <div class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary">Book now <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
-      </div>
-      <div class="group bg-blush rounded-[28px] p-6 border border-pink-100 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-        <div class="w-12 h-12 rounded-2xl bg-white border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="eye" class="w-6 h-6"></i></div>
+      </a>
+      <a href="#booking" class="group bg-white rounded-[28px] p-6 border border-pink-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+        <div class="w-12 h-12 rounded-2xl bg-blush border border-pink-100 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"><i data-lucide="eye" class="w-6 h-6"></i></div>
         <h3 class="font-display font-bold text-lg mt-4">Lashes & Brows</h3>
-        <p class="text-sm text-ink/60 mt-1">Classic, hybrid & volume — beautifully defined.</p>
-        <ul class="text-xs mt-4 space-y-1.5 text-ink/80">
+        <p class="text-sm text-ink/60 mt-1">Classic, hybrid & volume.</p>
+        <div class="mt-3 text-xs text-ink/50">Sample</div>
+        <ul class="text-xs mt-1 space-y-1.5 text-ink/80">
           <li class="flex justify-between"><span>Classic Lashes</span><span class="font-bold">$15</span></li>
           <li class="flex justify-between"><span>Brow Shape + Tint</span><span class="font-bold">$10</span></li>
         </ul>
         <div class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-primary">Book now <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
-      </div>
-      <div class="group bg-gradient-to-br from-ink to-ink2 rounded-[28px] p-6 text-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      </a>
+      <a href="#booking" class="group bg-gradient-to-br from-ink to-ink2 rounded-[28px] p-6 text-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
         <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center"><i data-lucide="gift" class="w-6 h-6"></i></div>
         <h3 class="font-display font-bold text-lg mt-4">Lounge Packages</h3>
-        <p class="text-sm text-white/70 mt-1">Pamper days for birthdays, bridal parties & besties.</p>
-        <ul class="text-xs mt-4 space-y-1.5 text-white/80">
+        <p class="text-sm text-white/70 mt-1">Birthdays, bridal parties & besties.</p>
+        <div class="mt-3 text-xs text-white/60">Sample</div>
+        <ul class="text-xs mt-1 space-y-1.5 text-white/80">
           <li class="flex justify-between"><span>Bestie Duo (2x mani+pedi)</span><span class="font-bold">$60</span></li>
           <li class="flex justify-between"><span>Bridal Party (4 pax)</span><span class="font-bold">$140</span></li>
         </ul>
         <div class="mt-4 inline-flex items-center gap-1 text-xs font-bold text-secondary">Enquire <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="py-14 bg-blush">
+<!-- BUSINESS BENEFITS - Priority 4 -->
+<section class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-10 items-center bg-white rounded-[32px] p-6 md:p-10 border border-pink-100 shadow-sm">
-      <div>
-        <div class="text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Our Story</div>
-        <h2 class="font-display text-3xl font-bold leading-tight mt-2">A family dream, shared<br>with Harare.</h2>
-        <p class="text-sm text-ink/70 leading-relaxed mt-4">
-          Candy Floss Nails and Beauty Lounge is an expression of the creative edge that runs in our family — beyond other separate businesses that we run as individuals. Founded by sisters <span class="font-semibold text-ink">Florence Musingwini (CEO, based in Canada)</span> and <span class="font-semibold text-ink">Lisa Musingwini (Managing Director, Harare)</span>, the lounge opened at <span class="font-semibold">BJP Southgate Mall, Braeside</span> to bring affordable luxury to every woman.
-        </p>
-        <div class="grid grid-cols-2 gap-4 mt-6">
-          <div class="bg-blush rounded-2xl p-4 border border-pink-100">
-            <div class="text-2xl font-display font-bold text-primary">2016</div>
-            <div class="text-xs font-bold">Inspiration</div>
-            <div class="text-xs text-ink/60 mt-1">Idea born — women need a lounge, not just a salon</div>
-          </div>
-          <div class="bg-blush rounded-2xl p-4 border border-pink-100">
-            <div class="text-2xl font-display font-bold text-primary">2023</div>
-            <div class="text-xs font-bold">Doors Open</div>
-            <div class="text-xs text-ink/60 mt-1">Launched at Southgate Mall with breathtaking interior</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 mt-6 bg-ink text-white rounded-2xl p-4">
-          <i data-lucide="quote" class="w-6 h-6 text-secondary shrink-0"></i>
-          <p class="text-sm leading-relaxed">“We are about business and the reason we made this into a lounge is because we want women of the same mindset in the same space and share ideas.” — Florence</p>
-        </div>
+    <div class="max-w-2xl">
+      <h2 class="font-display text-2xl md:text-3xl font-bold">What this platform does for the business</h2>
+      <p class="text-sm text-ink/60 mt-2">No jargon — just outcomes owners care about.</p>
+    </div>
+    <div class="grid md:grid-cols-4 gap-4 mt-8">
+      <div class="bg-blush border border-pink-100 rounded-2xl p-5">
+        <div class="w-9 h-9 rounded-full bg-white border border-pink-100 flex items-center justify-center text-primary"><i data-lucide="message-circle" class="w-5 h-5"></i></div>
+        <div class="font-bold text-sm mt-3">Customers contact instantly</div>
+        <div class="text-xs text-ink/60 mt-1">WhatsApp button on every page — no searching for numbers.</div>
       </div>
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=900&fit=crop" class="rounded-[28px] w-full h-[520px] object-cover" alt="Lounge interior">
-        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl border border-pink-100 flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full overflow-hidden"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face" class="w-full h-full object-cover"></div>
-          <div>
-            <div class="text-sm font-bold">Lisa Musingwini</div>
-            <div class="text-xs text-primary font-semibold">Managing Director • On-site daily</div>
-          </div>
-        </div>
-        <div class="absolute -top-3 -right-3 bg-primary text-white rounded-full px-4 py-2 text-xs font-bold shadow-lg">Goal: Zimbabwe’s Most Sought-After Beauty Bar</div>
+      <div class="bg-blush border border-pink-100 rounded-2xl p-5">
+        <div class="w-9 h-9 rounded-full bg-white border border-pink-100 flex items-center justify-center text-primary"><i data-lucide="calendar-check" class="w-5 h-5"></i></div>
+        <div class="font-bold text-sm mt-3">Bookings stay organized</div>
+        <div class="text-xs text-ink/60 mt-1">Appointments land in one place — fewer missed messages.</div>
+      </div>
+      <div class="bg-blush border border-pink-100 rounded-2xl p-5">
+        <div class="w-9 h-9 rounded-full bg-white border border-pink-100 flex items-center justify-center text-primary"><i data-lucide="search" class="w-5 h-5"></i></div>
+        <div class="font-bold text-sm mt-3">Easier to be found</div>
+        <div class="text-xs text-ink/60 mt-1">Helps customers searching “nails Braeside” discover the lounge.</div>
+      </div>
+      <div class="bg-blush border border-pink-100 rounded-2xl p-5">
+        <div class="w-9 h-9 rounded-full bg-white border border-pink-100 flex items-center justify-center text-primary"><i data-lucide="edit-3" class="w-5 h-5"></i></div>
+        <div class="font-bold text-sm mt-3">Update without a developer</div>
+        <div class="text-xs text-ink/60 mt-1">Staff can change prices, photos and products in minutes.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing" class="py-14 bg-white">
-  <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="text-center mb-8">
-      <h2 class="font-display text-3xl font-bold">Transparent pricing</h2>
-      <p class="text-sm text-ink/60 mt-2">No surprises. Pay in-store or online. USD pricing.</p>
+<!-- BUSINESS CASE - Priority 7 -->
+<section class="py-12 bg-blush">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+    <div class="bg-white rounded-[32px] border border-pink-100 p-6 md:p-8">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="bg-ink text-white text-[11px] font-bold tracking-widest uppercase rounded-full px-3 py-1">The Opportunity</span>
+        <span class="text-xs text-ink/60">Customers increasingly discover businesses through Google and social media.</span>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
+          <div class="text-xs font-bold tracking-widest uppercase text-amber-800">Current journey</div>
+          <div class="flex items-center gap-2 mt-3 text-sm font-medium flex-wrap">
+            <span class="bg-white border border-amber-200 rounded-full px-3 py-1">Social media</span> <i data-lucide="arrow-right" class="w-4 h-4 text-amber-700"></i>
+            <span class="bg-white border border-amber-200 rounded-full px-3 py-1">WhatsApp</span> <i data-lucide="arrow-right" class="w-4 h-4 text-amber-700"></i>
+            <span class="bg-white border border-amber-200 rounded-full px-3 py-1">Manual chat</span> <i data-lucide="arrow-right" class="w-4 h-4 text-amber-700"></i>
+            <span class="bg-amber-600 text-white rounded-full px-3 py-1">Booking</span>
+          </div>
+          <div class="text-xs text-amber-800/70 mt-3">Time-consuming, easy to miss messages, no customer database.</div>
+        </div>
+        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5">
+          <div class="text-xs font-bold tracking-widest uppercase text-emerald-800">Proposed journey</div>
+          <div class="flex items-center gap-2 mt-3 text-sm font-medium flex-wrap">
+            <span class="bg-white border border-emerald-200 rounded-full px-3 py-1">Google / Social</span> <i data-lucide="arrow-right" class="w-4 h-4 text-emerald-700"></i>
+            <span class="bg-white border border-emerald-200 rounded-full px-3 py-1">Website</span> <i data-lucide="arrow-right" class="w-4 h-4 text-emerald-700"></i>
+            <span class="bg-white border border-emerald-200 rounded-full px-3 py-1">Booking</span> <i data-lucide="arrow-right" class="w-4 h-4 text-emerald-700"></i>
+            <span class="bg-emerald-600 text-white rounded-full px-3 py-1">Customer database</span>
+          </div>
+          <div class="text-xs text-emerald-800/70 mt-3">Direct channel — bookings, sales and follow-up in one place.</div>
+        </div>
+      </div>
+      <div class="mt-6 grid md:grid-cols-3 gap-3 text-xs">
+        <div class="flex gap-2 bg-blush border border-pink-100 rounded-xl p-3"><i data-lucide="trending-up" class="w-4 h-4 text-primary shrink-0"></i><span><strong>More discovery</strong> — searchable services & prices</span></div>
+        <div class="flex gap-2 bg-blush border border-pink-100 rounded-xl p-3"><i data-lucide="gift" class="w-4 h-4 text-primary shrink-0"></i><span><strong>Gift cards & boutique</strong> — sell even when closed</span></div>
+        <div class="flex gap-2 bg-blush border border-pink-100 rounded-xl p-3"><i data-lucide="users" class="w-4 h-4 text-primary shrink-0"></i><span><strong>Return visits</strong> — reminders & re-booking</span></div>
+      </div>
     </div>
-    <div class="bg-white rounded-[28px] border border-pink-100 overflow-hidden shadow-sm">
+  </div>
+</section>
+
+<!-- PRICING - clearly sample -->
+<section id="pricing" class="py-12 bg-white">
+  <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="font-display text-2xl md:text-3xl font-bold">Menu • Sample pricing</h2>
+      <p class="text-xs text-ink/60 mt-2">Demo — To be provided by client • All prices editable by staff without a developer • USD</p>
+    </div>
+    <div class="bg-white rounded-[28px] border border-pink-100 overflow-hidden shadow-sm mt-6">
       <div class="grid md:grid-cols-2">
         <div class="p-6 md:p-8">
-          <h3 class="font-bold flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center"><i data-lucide="sparkles" class="w-4 h-4"></i></span> Nails & Beauty</h3>
+          <h3 class="font-bold flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center"><i data-lucide="sparkles" class="w-4 h-4"></i></span> Nails & Beauty <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-1 rounded-full ml-2">SAMPLE</span></h3>
           <div class="mt-4 divide-y divide-pink-50 text-sm">
             <div class="flex justify-between py-2.5"><span>Plain Naturals</span><span class="font-bold">$15</span></div>
             <div class="flex justify-between py-2.5"><span>Naturals with Design</span><span class="font-bold">$20–$35</span></div>
             <div class="flex justify-between py-2.5"><span>Gel Polish / Soak-off</span><span class="font-bold">$5–$12</span></div>
-            <div class="flex justify-between py-2.5"><span>Rubber Base + Overlay</span><span class="font-bold">$15</span></div>
-            <div class="flex justify-between py-2.5"><span>Stick-ons + Gel Polish</span><span class="font-bold">$12</span></div>
             <div class="flex justify-between py-2.5"><span>Manicure / Pedicure</span><span class="font-bold">$15 / $20</span></div>
           </div>
         </div>
         <div class="p-6 md:p-8 bg-blush border-t md:border-t-0 md:border-l border-pink-100">
-          <h3 class="font-bold flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-ink text-white flex items-center justify-center"><i data-lucide="heart" class="w-4 h-4"></i></span> Pamper & Party</h3>
+          <h3 class="font-bold flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-ink text-white flex items-center justify-center"><i data-lucide="heart" class="w-4 h-4"></i></span> Pamper & Party <span class="text-[10px] bg-amber-100 text-amber-800 px-2 py-1 rounded-full ml-2">SAMPLE</span></h3>
           <div class="mt-4 divide-y divide-pink-100 text-sm">
             <div class="flex justify-between py-2.5"><span>Full Glam Makeup</span><span class="font-bold">$25</span></div>
-            <div class="flex justify-between py-2.5"><span>Bridal Makeup + Trial</span><span class="font-bold">$80</span></div>
-            <div class="flex justify-between py-2.5"><span>Swedish Massage (60m)</span><span class="font-bold">$30</span></div>
-            <div class="flex justify-between py-2.5"><span>Deep Tissue (60m)</span><span class="font-bold">$40</span></div>
-            <div class="flex justify-between py-2.5"><span>Lashes Classic / Volume</span><span class="font-bold">$15 / $25</span></div>
-            <div class="flex justify-between py-2.5"><span>Waxing from</span><span class="font-bold">$5</span></div>
-          </div>
-          <div class="mt-6 bg-white rounded-2xl p-4 border border-pink-200 text-xs">
-            <span class="font-bold">Note:</span> This proposal uses Harare market rates (2025-26). Final menu to be confirmed with Lisa. All prices editable in CMS.
+            <div class="flex justify-between py-2.5"><span>Bridal (incl. trial)</span><span class="font-bold">$80</span></div>
+            <div class="flex justify-between py-2.5"><span>Massage (60m)</span><span class="font-bold">$30–$40</span></div>
+            <div class="flex justify-between py-2.5"><span>Lashes</span><span class="font-bold">$15 / $25</span></div>
           </div>
         </div>
       </div>
-      <div class="bg-ink text-white text-center py-3 text-xs font-semibold tracking-wide">💳 EcoCash • ZiG • USD Cash • Visa • MasterCard — Pay online or in-lounge</div>
+      <div class="bg-ink text-white text-center py-2.5 text-xs font-semibold">Demo payments: EcoCash • ZiG • USD • Card — Pay online or in-lounge</div>
     </div>
   </div>
 </section>
 
-<!-- E-COMMERCE SHOP -->
-<section id="shop" class="py-14 bg-blush">
+<!-- BOUTIQUE - Priority 6: 5 killer features -->
+<section id="shop" class="py-12 bg-blush">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="flex flex-wrap justify-between items-end gap-4 mb-8">
+    <div class="flex flex-wrap justify-between items-end gap-4 mb-6">
       <div>
-        <div class="text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Boutique — E-Commerce Ready</div>
-        <h2 class="font-display text-3xl font-bold">Shop Candy Floss</h2>
-        <p class="text-sm text-ink/60">Press-ons, gift vouchers & aftercare — delivered in Harare or collect at Southgate.</p>
-      </div>
-      <a href="#" class="hidden md:inline-flex items-center gap-2 text-sm font-bold text-ink hover:text-primary">View all <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <!-- product 1 -->
-      <div class="bg-white rounded-[24px] overflow-hidden border border-pink-100 hover:shadow-xl transition-all group">
-        <div class="relative h-56 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
-          <span class="absolute top-3 left-3 bg-white text-ink text-[11px] font-bold px-2.5 py-1 rounded-full">BEST SELLER</span>
-          <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow"><i data-lucide="heart" class="w-4 h-4"></i></button>
-        </div>
-        <div class="p-4">
-          <h3 class="font-bold text-sm">Velvet Press-On Set — “Braeside”</h3>
-          <p class="text-xs text-ink/60 mt-1">Reusable • 24 nails • Glue + file included</p>
-          <div class="flex items-center justify-between mt-3">
-            <span class="font-bold">$18 <span class="text-xs font-normal text-ink/50 line-through">$22</span></span>
-            <button onclick="addToCart('Velvet Press-On Braeside',18)" class="bg-ink text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-primary transition-colors cursor-pointer">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <!-- product 2 -->
-      <div class="bg-white rounded-[24px] overflow-hidden border border-pink-100 hover:shadow-xl transition-all group">
-        <div class="relative h-56 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=600&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
-          <span class="absolute top-3 left-3 bg-primary text-white text-[11px] font-bold px-2.5 py-1 rounded-full">NEW</span>
-        </div>
-        <div class="p-4">
-          <h3 class="font-bold text-sm">Gloss Cuticle Oil + Cream Duo</h3>
-          <p class="text-xs text-ink/60 mt-1">Aftercare • Vegan • Rose scent</p>
-          <div class="flex items-center justify-between mt-3">
-            <span class="font-bold">$12</span>
-            <button onclick="addToCart('Cuticle Duo',12)" class="bg-ink text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-primary transition-colors cursor-pointer">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <!-- product 3 -->
-      <div class="bg-white rounded-[24px] overflow-hidden border border-pink-100 hover:shadow-xl transition-all group">
-        <div class="relative h-56 overflow-hidden bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
-          <div class="text-center p-6">
-            <div class="w-16 h-16 mx-auto bg-white rounded-2xl flex items-center justify-center shadow"><i data-lucide="gift" class="w-8 h-8 text-primary"></i></div>
-            <div class="font-display font-bold mt-3">Gift Voucher</div>
-            <div class="text-xs text-ink/60">Send instant WhatsApp voucher</div>
-          </div>
-          <span class="absolute top-3 left-3 bg-ink text-white text-[11px] font-bold px-2.5 py-1 rounded-full">E-GIFT</span>
-        </div>
-        <div class="p-4">
-          <h3 class="font-bold text-sm">Lounge Gift Card — $50</h3>
-          <p class="text-xs text-ink/60 mt-1">Valid 6 months • Any service</p>
-          <div class="flex items-center justify-between mt-3">
-            <span class="font-bold">$50</span>
-            <button onclick="addToCart('Gift Card $50',50)" class="bg-ink text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-primary transition-colors cursor-pointer">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <!-- product 4 -->
-      <div class="bg-white rounded-[24px] overflow-hidden border border-pink-100 hover:shadow-xl transition-all group">
-        <div class="relative h-56 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600&h=600&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="">
-        </div>
-        <div class="p-4">
-          <h3 class="font-bold text-sm">Bridal Party Package (4 pax)</h3>
-          <p class="text-xs text-ink/60 mt-1">Mani + Pedi + Bubbly • Bookable date</p>
-          <div class="flex items-center justify-between mt-3">
-            <span class="font-bold">$140</span>
-            <button onclick="addToCart('Bridal Party 4 pax',140)" class="bg-primary text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-pink-600 transition-colors cursor-pointer">Book Date</button>
-          </div>
-        </div>
+        <div class="text-[11px] font-bold tracking-[0.2em] uppercase text-primary">Demo boutique • Sample products</div>
+        <h2 class="font-display text-2xl md:text-3xl font-bold">Shop — gift cards & press-ons</h2>
+        <p class="text-xs text-ink/60">Samples — to be replaced with real products & real checkout.</p>
       </div>
     </div>
-    <div class="mt-8 bg-white rounded-2xl border border-pink-100 p-4 flex flex-wrap gap-4 text-xs items-center justify-center">
-      <span class="flex items-center gap-2"><i data-lucide="truck" class="w-4 h-4 text-primary"></i> Harare same-day delivery $5 • Free over $60</span>
-      <span class="hidden md:inline w-1 h-1 bg-pink-200 rounded-full"></span>
-      <span class="flex items-center gap-2"><i data-lucide="store" class="w-4 h-4 text-primary"></i> Click & Collect at Southgate Mall</span>
-      <span class="hidden md:inline w-1 h-1 bg-pink-200 rounded-full"></span>
-      <span class="flex items-center gap-2"><i data-lucide="message-circle" class="w-4 h-4 text-primary"></i> WhatsApp order: +263 XX XXX XXXX (TBC with Lisa)</span>
+    <div class="grid md:grid-cols-4 gap-4">
+      <div class="bg-white rounded-2xl overflow-hidden border border-pink-100">
+        <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" class="w-full h-full object-cover" alt="Sample product"></div>
+        <div class="p-4">
+          <div class="text-xs font-bold">Press-On Set — “Braeside” <span class="bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded text-[10px]">DEMO</span></div>
+          <div class="text-xs text-ink/60">Reusable • Sample</div>
+          <div class="flex justify-between items-center mt-3"><span class="font-bold text-sm">$18</span><button onclick="addToCart('Press-On Braeside (Demo)',18)" class="bg-ink text-white text-xs font-bold px-3 py-1.5 rounded-full cursor-pointer">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden border border-pink-100">
+        <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=600&fit=crop" class="w-full h-full object-cover" alt="Sample product"></div>
+        <div class="p-4">
+          <div class="text-xs font-bold">Cuticle Duo <span class="bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded text-[10px]">DEMO</span></div>
+          <div class="text-xs text-ink/60">Aftercare • Sample</div>
+          <div class="flex justify-between items-center mt-3"><span class="font-bold text-sm">$12</span><button onclick="addToCart('Cuticle Duo (Demo)',12)" class="bg-ink text-white text-xs font-bold px-3 py-1.5 rounded-full cursor-pointer">Add to Cart</button></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden border border-pink-100">
+        <div class="h-48 bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+          <div class="text-center"><div class="w-12 h-12 mx-auto bg-white rounded-xl flex items-center justify-center"><i data-lucide="gift" class="w-6 h-6 text-primary"></i></div><div class="font-bold text-sm mt-2">Gift Card — $50</div><div class="text-[11px] text-ink/60">Valid 6 months • Demo</div></div>
+        </div>
+        <div class="p-4">
+          <div class="text-xs font-bold">E-Gift Voucher <span class="bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded text-[10px]">DEMO</span></div>
+          <div class="flex justify-between items-center mt-3"><span class="font-bold text-sm">$50</span><button onclick="addToCart('Gift Card $50 (Demo)',50)" class="bg-ink text-white text-xs font-bold px-3 py-1.5 rounded-full cursor-pointer">Add</button></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden border border-pink-100">
+        <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600&h=600&fit=crop" class="w-full h-full object-cover" alt="Sample"></div>
+        <div class="p-4">
+          <div class="text-xs font-bold">Bridal Party (4 pax) <span class="bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded text-[10px]">DEMO</span></div>
+          <div class="text-xs text-ink/60">Sample package</div>
+          <div class="flex justify-between items-center mt-3"><span class="font-bold text-sm">$140</span><button onclick="addToCart('Bridal Party (Demo)',140)" class="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full cursor-pointer">Book Date</button></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="py-14 bg-white">
+<section id="gallery" class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="text-center mb-8">
-      <h2 class="font-display text-3xl font-bold">Inside the Lounge</h2>
-      <p class="text-sm text-ink/60">Nice couches, breathtaking interior — *images are placeholders, to be replaced with real Candy Floss photos.</p>
+    <div class="text-center">
+      <h2 class="font-display text-2xl font-bold">Inside the Lounge</h2>
+      <p class="text-xs text-ink/60 mt-1">Sample imagery — to be replaced with real Candy Floss photos. <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">PLACEHOLDER</span></p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px]">
-      <div class="rounded-[20px] overflow-hidden col-span-2 row-span-2"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=800&h=800&fit=crop" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"></div>
-      <div class="rounded-[20px] overflow-hidden"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
-      <div class="rounded-[20px] overflow-hidden"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
-      <div class="rounded-[20px] overflow-hidden"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?AUTO=format&w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
-      <div class="rounded-[20px] overflow-hidden"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="py-12 bg-blush">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="grid md:grid-cols-3 gap-5">
-      <div class="bg-white rounded-[20px] p-5 border border-pink-100">
-        <div class="flex text-amber-400 gap-0.5"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
-        <p class="text-sm mt-3 leading-relaxed">“Welcoming professional staff and the interior is breathtaking — like nothing else in town. My new regular!”</p>
-        <div class="text-xs font-bold mt-3">— Chipo M., Braeside</div>
-      </div>
-      <div class="bg-white rounded-[20px] p-5 border border-pink-100">
-        <div class="flex text-amber-400 gap-0.5"><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i></div>
-        <p class="text-sm mt-3 leading-relaxed">“Affordable but feels luxurious. Booked on WhatsApp, paid with EcoCash, collected press-ons same day.”</p>
-        <div class="text-xs font-bold mt-3">— Tariro K., Harare</div>
-      </div>
-      <div class="bg-ink text-white rounded-[20px] p-5">
-        <div class="text-sm font-bold">Google Reviews</div>
-        <div class="text-3xl font-display font-bold mt-1">4.9 ★</div>
-        <div class="text-xs opacity-70">Based on verified lounge visits • Proposal mock — real reviews to be imported</div>
-        <button class="mt-4 bg-white text-ink text-xs font-bold px-4 py-2 rounded-full">Read all</button>
-      </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 auto-rows-[160px]">
+      <div class="rounded-2xl overflow-hidden col-span-2 row-span-2"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=800&h=800&fit=crop" class="w-full h-full object-cover"></div>
+      <div class="rounded-2xl overflow-hidden"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
+      <div class="rounded-2xl overflow-hidden"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
+      <div class="rounded-2xl overflow-hidden"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
+      <div class="rounded-2xl overflow-hidden"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=600&fit=crop" class="w-full h-full object-cover"></div>
     </div>
   </div>
 </section>
 
-<!-- BOOKING -->
-<section id="booking" class="py-14 bg-white">
+<!-- BOOKING - Priority 5: obvious journey with validation -->
+<section id="booking" class="py-12 bg-blush">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="bg-gradient-to-br from-ink to-[#4A2040] rounded-[32px] overflow-hidden text-white grid lg:grid-cols-2">
-      <div class="p-6 md:p-10">
-        <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-xs font-bold tracking-wide"><span class="w-2 h-2 bg-emerald-400 rounded-full"></span> Live booking • Instant WhatsApp confirmation</div>
-        <h2 class="font-display text-3xl font-bold mt-4">Book in 30 seconds</h2>
-        <p class="text-sm text-white/70 mt-2">Choose service, pick time, pay online or pay in lounge. Lisa’s team confirms via WhatsApp.</p>
-        <form onsubmit="event.preventDefault(); alert('Demo: Booking sent! In production this creates WhatsApp + EcoCash link.');" class="mt-6 space-y-4 bg-white rounded-[24px] p-5 text-ink">
+    <div class="bg-gradient-to-br from-ink to-[#4A2040] rounded-[28px] overflow-hidden text-white grid lg:grid-cols-2">
+      <div class="p-6 md:p-8">
+        <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 text-xs font-bold"><span class="w-2 h-2 bg-emerald-400 rounded-full"></span> Booking demo — instant feedback, no real charge</div>
+        <h2 class="font-display text-2xl md:text-3xl font-bold mt-3">Book in 30 seconds</h2>
+        <p class="text-sm text-white/70 mt-1">Choose service → date → details → confirm. Validation + WhatsApp preview included.</p>
+        <form id="booking-form" novalidate class="mt-5 space-y-3 bg-white rounded-2xl p-5 text-ink">
           <div class="grid grid-cols-2 gap-3">
             <label class="text-xs font-bold">Service
-              <select class="mt-1 w-full border border-pink-200 rounded-full px-4 py-2.5 text-sm bg-white">
-                <option>Gel Overlay — $15</option>
-                <option>Luxe Pedicure — $20</option>
-                <option>Full Glam — $25</option>
-                <option>Massage 60m — $35</option>
+              <select id="b-service" class="mt-1 w-full border border-pink-200 rounded-full px-3 py-2.5 text-sm bg-white">
+                <option>Gel Overlay — $15 (Sample)</option>
+                <option>Luxe Pedicure — $20 (Sample)</option>
+                <option>Full Glam — $25 (Sample)</option>
+                <option>Massage 60m — $35 (Sample)</option>
               </select>
             </label>
-            <label class="text-xs font-bold">Date
-              <input type="date" class="mt-1 w-full border border-pink-200 rounded-full px-4 py-2.5 text-sm">
+            <label class="text-xs font-bold">Date <span class="text-primary">*</span>
+              <input id="b-date" type="date" class="mt-1 w-full border border-pink-200 rounded-full px-3 py-2.5 text-sm">
+              <span id="err-date" class="hidden text-[11px] text-red-600"></span>
             </label>
           </div>
           <div class="grid grid-cols-2 gap-3">
-            <label class="text-xs font-bold">Time <input type="time" class="mt-1 w-full border border-pink-200 rounded-full px-4 py-2.5 text-sm"></label>
-            <label class="text-xs font-bold">Name <input placeholder="Your name" class="mt-1 w-full border border-pink-200 rounded-full px-4 py-2.5 text-sm"></label>
+            <label class="text-xs font-bold">Time <span class="text-primary">*</span><input id="b-time" type="time" class="mt-1 w-full border border-pink-200 rounded-full px-3 py-2.5 text-sm"><span id="err-time" class="hidden text-[11px] text-red-600"></span></label>
+            <label class="text-xs font-bold">Name <span class="text-primary">*</span><input id="b-name" placeholder="Your name" class="mt-1 w-full border border-pink-200 rounded-full px-3 py-2.5 text-sm"><span id="err-name" class="hidden text-[11px] text-red-600"></span></label>
           </div>
-          <label class="text-xs font-bold block">WhatsApp <input placeholder="+263 77..." class="mt-1 w-full border border-pink-200 rounded-full px-4 py-2.5 text-sm"></label>
-          <button class="w-full bg-primary text-white rounded-full py-3 font-bold text-sm hover:bg-pink-600 transition-colors">Confirm Booking on WhatsApp →</button>
-          <p class="text-[11px] text-center text-ink/50">No card needed • Free cancellation 24h • Powered by Fresha-style widget (proposal)</p>
+          <label class="text-xs font-bold block">WhatsApp <span class="text-primary">*</span><input id="b-phone" placeholder="+263 77..." class="mt-1 w-full border border-pink-200 rounded-full px-3 py-2.5 text-sm"><span id="err-phone" class="hidden text-[11px] text-red-600"></span></label>
+          <div id="form-error" class="hidden bg-red-50 border border-red-200 text-red-700 rounded-xl px-3 py-2 text-xs"></div>
+          <div id="form-success" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl px-3 py-2 text-xs"></div>
+          <button id="book-btn" type="submit" class="w-full bg-primary text-white rounded-full py-3 font-bold text-sm hover:bg-pink-600 transition-colors flex items-center justify-center gap-2"><span id="btn-text">Confirm Booking →</span><span id="btn-spinner" class="hidden w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin"></span></button>
+          <p class="text-[11px] text-center text-ink/50">Demo only • No card needed • Free cancellation demo • Back button & validation tested</p>
         </form>
       </div>
-      <div class="relative bg-white/10">
-        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=900&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-60">
-        <div class="relative p-6 md:p-10 flex flex-col h-full justify-end">
+      <div class="relative bg-white/10 min-h-[360px]">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=900&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-60" alt="Sample">
+        <div class="relative p-6 md:p-8 flex flex-col h-full justify-end">
           <div class="bg-white rounded-2xl p-4 text-ink shadow-xl">
-            <div class="flex items-center gap-2 text-xs font-bold"><i data-lucide="clock" class="w-4 h-4 text-primary"></i> Opening Hours</div>
+            <div class="flex items-center gap-2 text-xs font-bold"><i data-lucide="clock" class="w-4 h-4 text-primary"></i> Opening Hours <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full text-[10px]">SAMPLE</span></div>
             <div class="text-sm mt-2 space-y-1">
               <div class="flex justify-between"><span>Mon – Sat</span><span class="font-bold">08:00 – 18:00</span></div>
               <div class="flex justify-between"><span>Sunday</span><span class="font-bold">09:00 – 16:00 (by booking)</span></div>
             </div>
-            <div class="mt-3 text-xs bg-blush border border-pink-100 rounded-xl p-3">House calls available on request • Free secure parking at Southgate Mall</div>
+            <div class="mt-3 text-xs bg-blush border border-pink-100 rounded-xl p-3">Sample — to be confirmed by client • Free parking at Southgate Mall</div>
           </div>
         </div>
       </div>
@@ -484,36 +522,46 @@ tailwind.config = {
 </section>
 
 <!-- VISIT -->
-<section id="visit" class="py-14 bg-blush">
+<section id="visit" class="py-12 bg-white">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid lg:grid-cols-2 gap-6">
-    <div class="bg-white rounded-[28px] p-6 md:p-8 border border-pink-100">
+    <div class="bg-blush rounded-[28px] p-6 md:p-8 border border-pink-100">
       <h3 class="font-display text-2xl font-bold">Visit the Lounge</h3>
       <div class="mt-4 space-y-3 text-sm">
-        <div class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0"></i><span><strong>BJP Southgate Mall</strong>, Chiremba Road, Braeside, Harare, Zimbabwe — Near the main mall entrance, look for the pink Candy Floss signage.</span></div>
-        <div class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 text-primary shrink-0"></i><span><strong>Phone/WhatsApp:</strong> TBC with Lisa (proposal placeholder: +263 77 XXX XXXX) — will be linked to click-to-WhatsApp</span></div>
-        <div class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 text-primary shrink-0"></i><span><strong>Email:</strong> hello@candyfloss.co.zw (proposed) • admin@candyfloss.co.zw</span></div>
-        <div class="flex gap-3"><i data-lucide="instagram" class="w-5 h-5 text-primary shrink-0"></i><span><strong>Instagram:</strong> @candyfloss_nails_braeside (to be created) • TikTok + Facebook same handle</span></div>
+        <div class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0"></i><span><strong>BJP Southgate Mall</strong>, Chiremba Road, Braeside, Harare — Sample address from public interview</span></div>
+        <div class="flex gap-3"><i data-lucide="clock" class="w-5 h-5 text-primary shrink-0"></i><span>Hours shown are samples — to be confirmed</span></div>
       </div>
-      <div class="mt-6 grid grid-cols-2 gap-3">
-        <a class="bg-ink text-white rounded-full py-3 text-center font-bold text-sm hover:bg-ink2 transition-colors cursor-pointer">Get Directions</a>
-        <a class="bg-white border border-pink-200 rounded-full py-3 text-center font-bold text-sm hover:bg-pink-50 transition-colors cursor-pointer">WhatsApp Us</a>
+      <div class="mt-5 grid grid-cols-2 gap-3">
+        <a href="https://maps.google.com/?q=BJP+Southgate+Mall+Braeside+Harare" target="_blank" class="bg-ink text-white rounded-full py-3 text-center font-bold text-sm cursor-pointer">Get Directions</a>
+        <a href="https://wa.me/263771273169" target="_blank" class="bg-emerald-600 text-white rounded-full py-3 text-center font-bold text-sm cursor-pointer">WhatsApp Us</a>
       </div>
-      <div class="mt-4 text-[11px] text-ink/50">Source: The Standard 2023 interview + public directory. All contact placeholders to be confirmed — proposal uses editable CMS.</div>
+      <div class="mt-4 text-[11px] text-ink/50">Contact details above are demo placeholders — real details to be supplied by client.</div>
     </div>
-    <div class="rounded-[28px] overflow-hidden bg-white border border-pink-100 h-[360px] relative">
+    <div class="rounded-[28px] overflow-hidden border border-pink-100 h-[340px] relative">
       <iframe src="https://maps.google.com/maps?q=BJP%20Southgate%20Mall%20Braeside%20Harare&t=&z=15&ie=UTF8&iwloc=&output=embed" class="w-full h-full border-0"></iframe>
-      <div class="absolute bottom-3 left-3 bg-white rounded-full px-4 py-2 text-xs font-bold shadow border border-pink-100 flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span> BJP Southgate Mall • Braeside</div>
+      <div class="absolute bottom-3 left-3 bg-white rounded-full px-3 py-1.5 text-xs font-bold shadow border border-pink-100 flex items-center gap-2"><span class="w-2 h-2 bg-primary rounded-full"></span> BJP Southgate Mall • Braeside</div>
     </div>
   </div>
 </section>
 
+<!-- FINAL CTA - Priority 9 -->
+<section class="py-12 bg-ink">
+  <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center text-white">
+    <h2 class="font-display text-3xl md:text-4xl font-bold">Interested in turning this concept<br>into your actual platform?</h2>
+    <p class="text-sm text-white/70 mt-3 max-w-2xl mx-auto">I noticed an opportunity in how customers discover and book your services, so I built a working concept to demonstrate a possible solution — not just a website.</p>
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <a href="https://wa.me/263771273169?text=Hi%20Noel%2C%20I%20want%20a%2015-min%20walkthrough%20of%20the%20Candy%20Floss%20concept" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-7 py-3.5 rounded-full font-bold text-sm hover:bg-pink-600 transition-colors cursor-pointer"><i data-lucide="message-circle" class="w-4 h-4"></i> Book a 15-minute walkthrough</a>
+      <a href="mailto:chakwenyanoel0@gmail.com" class="inline-flex items-center gap-2 bg-white text-ink px-7 py-3.5 rounded-full font-bold text-sm hover:bg-blush transition-colors cursor-pointer"><i data-lucide="mail" class="w-4 h-4"></i> chakwenyanoel0@gmail.com</a>
+      <a href="tel:+263771273169" class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-7 py-3.5 rounded-full font-bold text-sm hover:bg-white/20 transition-colors cursor-pointer"><i data-lucide="phone" class="w-4 h-4"></i> 0771273169</a>
+    </div>
+    <div class="text-xs text-white/50 mt-4">No fake reviews • No jargon • Working prototype • Next step is a short walkthrough, not a hard sell.</div>
+  </div>
+</section>
 
-
-<footer class="bg-white border-t border-pink-100 py-8">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between gap-6 text-sm">
+<footer class="bg-white border-t border-pink-100 py-6">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between gap-4 text-sm">
     <div>
       <div class="font-display font-bold">Candy Floss Nails & Beauty Lounge</div>
-      <div class="text-xs text-ink/60">BJP Southgate Mall, Braeside, Harare • © 2026</div>
+      <div class="text-xs text-ink/60">BJP Southgate Mall, Braeside, Harare • © 2026 • Concept demo only</div>
     </div>
     <div class="text-right">
       <div class="inline-flex items-center gap-3 bg-ink text-white rounded-full px-4 py-2">
@@ -534,16 +582,16 @@ tailwind.config = {
   <div onclick="toggleCart()" class="absolute inset-0 bg-ink/50"></div>
   <div class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col">
     <div class="p-6 border-b border-pink-100 flex justify-between items-center">
-      <h3 class="font-display font-bold text-lg">Your Bag <span id="cart-count2" class="text-primary">0</span></h3>
+      <h3 class="font-display font-bold text-lg">Your Bag <span id="cart-count2" class="text-primary">0</span> <span class="text-[11px] bg-amber-100 text-amber-800 px-2 py-1 rounded-full ml-2">DEMO</span></h3>
       <button onclick="toggleCart()" class="w-8 h-8 rounded-full bg-blush flex items-center justify-center"><i data-lucide="x" class="w-4 h-4"></i></button>
     </div>
     <div id="cart-items" class="flex-1 p-6 space-y-4 overflow-auto">
-      <p class="text-sm text-ink/50 text-center py-10">Your cart is empty — add a press-on set or gift card.</p>
+      <p class="text-sm text-ink/50 text-center py-10">Demo cart — no real charge. Add a sample product.</p>
     </div>
     <div class="p-6 border-t border-pink-100 bg-blush">
-      <div class="flex justify-between font-bold">Total <span id="cart-total">$0</span></div>
-      <button onclick="alert('Demo: Checkout → EcoCash/Paynow (in production)')" class="mt-4 w-full bg-ink text-white rounded-full py-3 font-bold text-sm">Checkout • Pay with EcoCash</button>
-      <div class="text-[11px] text-center mt-2 text-ink/50">Harare delivery $5 • Free over $60 • Collect free</div>
+      <div class="flex justify-between font-bold">Total <span id="cart-total">$0</span> <span class="text-xs font-normal text-ink/50">Demo</span></div>
+      <button onclick="alert('Demo: In production this would be EcoCash / Paynow checkout.')" class="mt-4 w-full bg-ink text-white rounded-full py-3 font-bold text-sm">Demo Checkout</button>
+      <div class="text-[11px] text-center mt-2 text-ink/50">Demo — no payment taken</div>
     </div>
   </div>
 </div>
@@ -551,23 +599,49 @@ tailwind.config = {
 <script>
 lucide.createIcons();
 let cart=[];
-function addToCart(name,price){
-  cart.push({name,price});
-  updateCart();
-  document.getElementById('cart-drawer').classList.remove('hidden');
-}
-function toggleCart(){
-  document.getElementById('cart-drawer').classList.toggle('hidden');
-}
+function toggleCart(){document.getElementById('cart-drawer').classList.toggle('hidden')}
+function addToCart(name,price){cart.push({name,price});updateCart();document.getElementById('cart-drawer').classList.remove('hidden')}
 function updateCart(){
   document.getElementById('cart-count').textContent=cart.length;
   document.getElementById('cart-count2').textContent=cart.length;
   const total=cart.reduce((s,i)=>s+i.price,0);
   document.getElementById('cart-total').textContent='$'+total;
   const el=document.getElementById('cart-items');
-  if(cart.length===0){ el.innerHTML='<p class="text-sm text-ink/50 text-center py-10">Your cart is empty — add a press-on set or gift card.</p>'; return; }
-  el.innerHTML=cart.map((c,i)=>`<div class="flex justify-between items-center bg-blush border border-pink-100 rounded-2xl p-3"><div><div class="text-sm font-bold">${c.name}</div><div class="text-xs text-ink/60">$${c.price}</div></div><button onclick="cart.splice(${i},1);updateCart()" class="text-xs font-bold text-primary">Remove</button></div>`).join('');
+  if(cart.length===0){el.innerHTML='<p class="text-sm text-ink/50 text-center py-10">Demo cart — no real charge. Add a sample product.</p>';return;}
+  el.innerHTML=cart.map((c,i)=>`<div class="flex justify-between items-center bg-blush border border-pink-100 rounded-2xl p-3"><div><div class="text-sm font-bold">${c.name}</div><div class="text-xs text-ink/60">$${c.price} • Demo</div></div><button onclick="cart.splice(${i},1);updateCart()" class="text-xs font-bold text-primary">Remove</button></div>`).join('');
 }
+// Priority 5: validation, loading, error, back button safe
+const form=document.getElementById('booking-form');
+const errDate=document.getElementById('err-date'), errTime=document.getElementById('err-time'), errName=document.getElementById('err-name'), errPhone=document.getElementById('err-phone');
+const formError=document.getElementById('form-error'), formSuccess=document.getElementById('form-success');
+const btn=document.getElementById('book-btn'), btnText=document.getElementById('btn-text'), spinner=document.getElementById('btn-spinner');
+function showErr(el,msg){el.textContent=msg;el.classList.remove('hidden');}
+function clearErrs(){[errDate,errTime,errName,errPhone].forEach(e=>{e.textContent='';e.classList.add('hidden')}); formError.classList.add('hidden'); formSuccess.classList.add('hidden');}
+form.addEventListener('submit', async (e)=>{
+  e.preventDefault(); clearErrs();
+  const date=document.getElementById('b-date').value, time=document.getElementById('b-time').value, name=document.getElementById('b-name').value.trim(), phone=document.getElementById('b-phone').value.trim(), service=document.getElementById('b-service').value;
+  let valid=true;
+  if(!date){showErr(errDate,'Please choose a date');valid=false;} else {
+    const today=new Date(); today.setHours(0,0,0,0); const chosen=new Date(date);
+    if(chosen < today){showErr(errDate,'Date cannot be in the past');valid=false;}
+    if(chosen.getDay()===0){/* Sunday allowed but warn? keep */ }
+  }
+  if(!time){showErr(errTime,'Please choose a time');valid=false;}
+  if(!name || name.length<2){showErr(errName,'Please enter your name');valid=false;}
+  if(!phone || !/^\+?263|0?7\d{8}/.test(phone.replace(/\s/g,''))){showErr(errPhone,'Enter a valid WhatsApp number');valid=false;}
+  if(!valid){formError.textContent='Please fix the errors above.';formError.classList.remove('hidden');return;}
+  btn.disabled=true; btnText.textContent='Confirming...'; spinner.classList.remove('hidden');
+  await new Promise(r=>setTimeout(r,900));
+  btn.disabled=false; btnText.textContent='Confirm Booking →'; spinner.classList.add('hidden');
+  formSuccess.innerHTML = `✓ Demo confirmed: <strong>${service}</strong> on <strong>${date} at ${time}</strong> for <strong>${name}</strong>.<br>In production this opens WhatsApp with: <em>Hi Candy Floss, I'd like to book ${service} on ${date} at ${time}</em> + EcoCash link.`;
+  formSuccess.classList.remove('hidden');
+  // WhatsApp preview
+  setTimeout(()=>{
+    const waText = encodeURIComponent(`Hi Candy Floss, I'd like to book ${service} on ${date} at ${time}. Name: ${name}`);
+    if(confirm('Demo success! Open WhatsApp preview?')) window.open(`https://wa.me/263771273169?text=${waText}`,'_blank');
+  },400);
+});
+// keep back button safe - no beforeunload
 </script>
 </body>
 </html>
